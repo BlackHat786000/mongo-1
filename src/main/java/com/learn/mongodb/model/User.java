@@ -1,13 +1,14 @@
 package com.learn.mongodb.model;
 
-import java.util.List;
-
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.util.List;
 
+@ToString
 @Getter
 @Setter
 @Document(collection="order")
